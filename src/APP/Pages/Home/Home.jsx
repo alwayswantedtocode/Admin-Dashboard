@@ -1,6 +1,12 @@
 import React from "react";
 import Topdeals from "../../../Components/Top Deals/Topdeals";
-import Chartobx from "../../../Components/Chartbox/chartobx";
+import ChartBox from "../../../Components/Chartbox/chartBox";
+import {
+  chartBoxUser,
+  chartBoxProduct,
+  chartBoxRevenue,
+  chartBoxConversion,
+} from "../../../Components/data";
 
 const Home = () => {
   return (
@@ -9,19 +15,19 @@ const Home = () => {
         <Topdeals />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        <Chartobx />
+        <ChartBox {...chartBoxUser} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        <Chartobx />
+        <ChartBox {...chartBoxProduct} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px] col-span-1 row-span-3">
-        box 4
+        <ChartBox {...chartBoxRevenue} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        <Chartobx />
+        <ChartBox {...chartBoxConversion} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        <Chartobx />
+        box
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px] col-span-2 row-span-2">
         box 7

@@ -6,11 +6,15 @@ module.exports = {
       gridTemplateColumns: {
         // Simple 4 column grid
         Temp: "repeat(4, 1fr)",
-        // Temps: "repeat(4, minmax(180px, auto))",
+        // Alternative grid configuration
+        Temps: "repeat(4, minmax(180px, auto))",
       },
       gridAutoRows: {
         // Complex site-specific row configuration
         layout: "minmax(180px, auto)",
+      },
+      fontFamily: {
+        Titan: ["Titan One", "sans-serif"],
       },
     },
   },
