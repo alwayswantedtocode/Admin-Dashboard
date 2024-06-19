@@ -7,7 +7,7 @@ import Logo from "../../Assets/Logo.png";
 
 const NavBar = () => {
   return (
-    <header className="w-[100%] h-[5rem] flex px-[0.5rem] items-center justify-center bg-[#082f49] text-[#ffff] border-2">
+    <header className="w-[100%] h-[5rem] flex px-[0.5rem] items-center justify-center bg-[#082f49] text-[#ffff]">
       <nav className="h-[4rem] w-[100%] flex items-center text-3xl">
         <div className="flex-3 px-2">
           <span className="w-max h-max">

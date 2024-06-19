@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
-    <div className="flex flex-col items-center gap-[20px] border-r-2">
+    <div className="flex flex-col items-center gap-[20px] border-r-2 border-stone-400">
       {menuLists.map((menulist,index) => {
         return (
           <div className=" gap-[20px] w-[10rem] md:w-[12rem]" key={index}>
@@ -13,7 +13,7 @@ const Menu = () => {
             </span>
             {menulist?.menu.map((menu) => {
               return (
-                <Link>
+                <Link to={menu.link}>
                   <div
                     className="flex items-center py-[1rem] pl-[1.2rem] gap-[10px]"
                     key={menu.id}

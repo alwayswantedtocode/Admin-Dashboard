@@ -22,53 +22,51 @@ const icons = [
   { id: 4, Icon: <NotificationIcon /> },
 ];
 
-
 const menuLists = [
   {
-   
+    id: 1,
     header: "Main",
     menu: [
       { id: 1, Icon: <HomeIcon />, name: "Homepage", link: "/" },
-      { id: 2, Icon: <ProfileIcon />, name: "Profile", link: "/Profile" },
+      { id: 2, Icon: <ProfileIcon />, name: "Profile", link: "/Profile/a" },
     ],
   },
   {
-   
+    id: 2,
     header: "Lists",
     menu: [
-      { id: 3, Icon: <ProfileIcon />, name: "Users", link: "/Users" },
-      { id: 4, Icon: <ProductIcon />, name: "Products", link: "/Products" },
-      { id: 5, Icon: <OrderIcon />, name: "Order", link: "/Order" },
-      { id: 6, Icon: <PostIcon />, name: "Posts", link: "/Posts" },
+      { id: 1, Icon: <ProfileIcon />, name: "Users", link: "/Users" },
+      { id: 2, Icon: <ProductIcon />, name: "Products", link: "/Products" },
+      { id: 3, Icon: <OrderIcon />, name: "Order", link: "/Order" },
+      { id: 4, Icon: <PostIcon />, name: "Posts", link: "/Posts" },
     ],
   },
   {
-    
+    id: 3,
     header: "General",
     menu: [
-      { id: 7, Icon: <AppIcon />, name: "Elements", link: "/Elements" },
-      { id: 8, Icon: <NoteIcon />, name: "Notes", link: "/Notes" },
-      { id: 9, Icon: <FormIcon />, name: "Forms", link: "/Forms" },
-      { id: 10, Icon: <CalendarIcon />, name: "Calender", link: "/Calender" },
+      { id: 1, Icon: <AppIcon />, name: "Elements", link: "/" },
+      { id: 2, Icon: <NoteIcon />, name: "Notes", link: "/" },
+      { id: 3, Icon: <FormIcon />, name: "Forms", link: "/" },
+      { id: 14, Icon: <CalendarIcon />, name: "Calender", link: "/" },
     ],
   },
   {
- 
+    id: 4,
     header: "Maintenance",
     menu: [
-      { id: 11, Icon: <SettingsIcon />, name: "Settings", link: "/Settings" },
-      { id: 12, Icon: <BackupIcon />, name: "Backups", link: "/Backups" },
+      { id: 1, Icon: <SettingsIcon />, name: "Settings", link: "/" },
+      { id: 2, Icon: <BackupIcon />, name: "Backups", link: "/" },
     ],
   },
   {
-    
+    id:5,
     header: "Analytics",
     menu: [
-      { id: 13, Icon: <ChartIcon />, name: "Charts", link: "/Charts" },
-      { id: 14, Icon: <LogIcon />, name: "Logs", link: "/Logs" },
+      { id: 1, Icon: <ChartIcon />, name: "Charts", link: "/" },
+      { id: 2, Icon: <LogIcon />, name: "Logs", link: "/" },
     ],
   },
 ];
-
 
 export { icons, menuLists };

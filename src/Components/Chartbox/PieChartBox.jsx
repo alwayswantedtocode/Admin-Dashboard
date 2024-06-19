@@ -9,9 +9,9 @@ const data = [
 
 const PieChartBox = () => {
   return (
-    <div className="flex flex-col justify-between border-white">
-      <h1 className="font-bold">Leads by Source</h1>
-      <div className="border-2 w-[100%] h-[300px]">
+    <div className=" h-[100%] flex flex-col justify-between ">
+      <h1 className="text-3xl font-bold">Leads by Source</h1>
+      <div className=" w-[100%] h-[270px]">
         <ResponsiveContainer width="99%" height="100%">
           <PieChart>
             <Tooltip
@@ -19,8 +19,8 @@ const PieChartBox = () => {
             />
             <Pie
               data={data}
-              innerRadius={"70%"}
-              outerRadius={"90%"}
+              innerRadius={"60%"}
+              outerRadius={"85%"}
               paddingAngle={5}
               dataKey="value"
             >
@@ -31,10 +31,10 @@ const PieChartBox = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="options border-2 flex justify-between">
+      <div className="flex justify-between ">
         {data.map((item) => (
-          <div className="option border-2 " key={item.name}>
-            <div className="flex items-center gap[10px]">
+          <div className="option " key={item.name}>
+            <div className="flex items-center gap-[10px]">
               <div
                 className="w-[10px] h-[10px] rounded-[50%]"
                 style={{ backgroundColor: item.color }}
