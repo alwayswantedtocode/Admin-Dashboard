@@ -9,8 +9,8 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-      <main className="flex flex-row border-2 border-green-600 bg-[#082f49] text-[#ffff]">
-        <div className="flex-6 border-2 border-red-300">
+      <main className="flex flex-row  bg-[#082f49] text-[#ffff]">
+        <div className="flex-3 ">
           <Menu />
         </div>
         <div className=" flex-1">

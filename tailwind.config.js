@@ -2,13 +2,21 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    globalbg: {
-      dark: "#082f49",
-      // DEFAULT: "#06b6d4",
-      // dark: "#0e7490",
+    extend: {
+      gridTemplateColumns: {
+        // Simple 4 column grid
+        Temp: "repeat(4, 1fr)",
+        // Alternative grid configuration
+        Temps: "repeat(4, minmax(180px, auto))",
+      },
+      gridAutoRows: {
+        // Complex site-specific row configuration
+        layout: "minmax(180px, auto)",
+      },
+      fontFamily: {
+        Titan: ["Titan One", "sans-serif"],
+      },
     },
-
-    extend: {},
   },
   plugins: [],
 };

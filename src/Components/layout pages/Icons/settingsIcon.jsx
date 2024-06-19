@@ -1,8 +1,8 @@
 const settingsIcon = () => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="25px"
+      height="25px"
       viewBox="0 0 1024 1024"
       xmlns="http://www.w3.org/2000/svg"
     >
