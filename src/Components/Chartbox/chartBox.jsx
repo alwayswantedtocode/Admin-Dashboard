@@ -9,8 +9,8 @@ const ChartBox = (props) => {
 
   return (
     <div className="flex ">
-      <div className="w-max  flex flex-col flex-3 justify-between border-2 gap-[20px]">
-        <div className="w-max flex gap-[10px] border-2">
+      <div className="w-max  flex flex-col flex-3 justify-between gap-[20px]">
+        <div className="w-max flex gap-[10px]">
           <div className="w-max h-max">
             <img
               src={Logo}
@@ -18,15 +18,17 @@ const ChartBox = (props) => {
               className="w-[2.5rem] h-[1.5rem] cover "
             />
           </div>
-          <span className="">{props.title}</span>
+          <span className="font-bold">{props.title}</span>
         </div>
         <div className="flex flex-col gap-[20px]">
           <h1 className="font-bold text-2xl">{props.number}</h1>
-          <Link to={""}>View all</Link>
+          <Link to={""} style={{ color: props.color }}>
+            View all
+          </Link>
         </div>
       </div>
-      <div className="flex-1 flex flex-col justify-between border-2">
-        <div className=" " style={{ width: '100%', height: '100px' }}>
+      <div className="flex-1 flex flex-col justify-between">
+        <div className=" " style={{ width: "100%", height: "80px" }}>
           <ResponsiveContainer width="99%" height="100%">
             <LineChart data={props?.chartData}>
               <Tooltip
@@ -44,7 +46,7 @@ const ChartBox = (props) => {
             </LineChart>
           </ResponsiveContainer>
         </div>
-        <div className="flex flex-col border-2">
+        <div className="flex flex-col">
           <span
             className="flex justify-end"
             style={{ color: props.percentage < 0 ? "tomato" : "limegreen" }}

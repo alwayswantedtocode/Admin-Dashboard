@@ -6,7 +6,11 @@ import {
   chartBoxProduct,
   chartBoxRevenue,
   chartBoxConversion,
+  barChartBoxRevenue,
+  barChartBoxVisit,
 } from "../../../Components/data";
+import BarChartBox from "../../../Components/Chartbox/BarChartBox";
+import PieChartBox from "../../../Components/Chartbox/PieChartBox";
 
 const Home = () => {
   return (
@@ -21,22 +25,22 @@ const Home = () => {
         <ChartBox {...chartBoxProduct} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px] col-span-1 row-span-3">
-        <ChartBox {...chartBoxRevenue} />
+        <PieChartBox/>
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
         <ChartBox {...chartBoxConversion} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        box
+        <ChartBox {...chartBoxRevenue} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px] col-span-2 row-span-2">
-        box 7
+        box7
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        box 8
+        <BarChartBox {...barChartBoxVisit} />
       </article>
       <article className="border-2 border-red-500 rounded-[0.5rem] p-[20px]">
-        box 9
+        <BarChartBox {...barChartBoxRevenue} />
       </article>
     </section>
   );
