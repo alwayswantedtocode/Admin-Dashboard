@@ -9,7 +9,7 @@ const Layout = () => {
   return (
     <>
       <NavBar />
-      <main className="flex flex-row  bg-[#082f49] text-[#ffff]">
+      <main className="flex flex-row   text-[#ffff]">
         <div className="flex-3 ">
           <Menu />
         </div>

@@ -11,10 +11,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* width: 100vw; */
-  height: 100vh;
+  height: 100%;
+  background-color: #082f49;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.MuiDataGrid-toolbarContainer{
+  flex-direction: row-reverse;
 }

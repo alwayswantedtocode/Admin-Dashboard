@@ -8,17 +8,19 @@ import { Link } from "react-router-dom";
 const ChartBox = (props) => {
 
   return (
-    <div className="flex ">
-      <div className="w-max  flex flex-col flex-3 justify-between gap-[20px]">
-        <div className="w-max flex gap-[10px]">
-          <div className="w-max h-max">
+    <div className="flex  ">
+      <div className="w-max  flex flex-col flex-3 justify-between gap-[20px] ">
+        <div className="w-max flex flex-col gap-[10px]">
+          <div className="w-max h-max ">
             <img
               src={Logo}
               alt="logo"
-              className="w-[2.5rem] h-[1.5rem] cover "
+              className="w-[2.5rem] h-[1.5rem] cover"
             />
           </div>
-          <span className="font-bold">{props.title}</span>
+          <span className="font-bold ">
+            {props.title}
+          </span>
         </div>
         <div className="flex flex-col gap-[20px]">
           <h1 className="font-bold text-2xl">{props.number}</h1>
@@ -27,7 +29,7 @@ const ChartBox = (props) => {
           </Link>
         </div>
       </div>
-      <div className="flex-1 flex flex-col justify-between">
+      <div className="flex-1 flex flex-col ">
         <div className=" " style={{ width: "100%", height: "80px" }}>
           <ResponsiveContainer width="99%" height="100%">
             <LineChart data={props?.chartData}>

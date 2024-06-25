@@ -27,7 +27,7 @@ const menuLists = [
     id: 1,
     header: "Main",
     menu: [
-      { id: 1, Icon: <HomeIcon />, name: "Homepage", link: "/" },
+      { id: 1, Icon: <HomeIcon />, name: "Home", link: "/" },
       { id: 2, Icon: <ProfileIcon />, name: "Profile", link: "/Profile/a" },
     ],
   },
