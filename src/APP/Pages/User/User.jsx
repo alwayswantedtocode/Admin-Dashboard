@@ -1,9 +1,14 @@
-import React from 'react'
+import React from "react";
+import SinglePage from "../../../Components/SinglePage/SinglePage";
+import { singleUser } from "../../../Components/data";
 
 const User = () => {
   return (
-    <div>User</div>
-  )
-}
+    <div>
+      {" "}
+      <SinglePage {...singleUser} />
+    </div>
+  );
+};
 
-export default User
+export default User;

@@ -31,10 +31,10 @@ const PieChartBox = () => {
           </PieChart>
         </ResponsiveContainer>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between flex-wrap ">
         {data.map((item) => (
           <div className="option " key={item.name}>
-            <div className="flex items-center gap-[10px]">
+            <div className="flex  items-center gap-[10px]">
               <div
                 className="w-[10px] h-[10px] rounded-[50%]"
                 style={{ backgroundColor: item.color }}

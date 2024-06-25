@@ -15,7 +15,7 @@ import AreaChartBox from "../../../Components/Chartbox/AreaChartBox";
 
 const Home = () => {
   return (
-    <section className="w-[100%] grid  grid-cols-Temp  auto-rows-layout gap-[20px] px-[20px]">
+    <section className="w-[100%] grid grid-cols-smallTemps lg:grid-cols-Temp md:grid-cols-midTemps auto-rows-layout md:auto-rows-midLayout  lg:auto-rows-layout grid-flow-dense gap-[20px] px-[20px]">
       <article className=" border-2 border-stone-400 rounded-[0.5rem] p-[20px] col-span-1 row-span-3">
         <Topdeals />
       </article>
@@ -34,8 +34,8 @@ const Home = () => {
       <article className="border-2 border-stone-400 rounded-[0.5rem] p-[20px]">
         <ChartBox {...chartBoxRevenue} />
       </article>
-      <article className="border-2 bo<rder-stone-400 rounded-[0.5rem] p-[20px] col-span-2 row-span-2">
-       <AreaChartBox/>
+      <article className="border-2 border-stone-400 rounded-[0.5rem] p-[20px] col-span-2 row-span-2">
+        <AreaChartBox />
       </article>
       <article className="border-2 border-stone-400 rounded-[0.5rem] p-[20px]">
         <BarChartBox {...barChartBoxVisit} />

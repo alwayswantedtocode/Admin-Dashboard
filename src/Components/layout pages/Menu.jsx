@@ -7,8 +7,8 @@ const Menu = () => {
     <div className="flex flex-col items-center gap-[20px] border-r-2 border-stone-400">
       {menuLists.map((menulist,index) => {
         return (
-          <div className=" gap-[20px] w-[10rem] md:w-[12rem]" key={index}>
-            <span className="pl-[1rem] py-[5px] text-stone-300">
+          <div className=" gap-[20px] px-[1rem]" key={index}>
+            <span className=" py-[5px] text-stone-300  hidden lg:flex">
               {menulist.header}
             </span>
             {menulist?.menu.map((menu) => {
@@ -19,7 +19,9 @@ const Menu = () => {
                     key={menu.id}
                   >
                     <span className="">{menu.Icon}</span>
-                    <span className=" font-semibold">{menu.name}</span>
+                    <span className=" font-semibold hidden lg:flex">
+                      {menu.name}
+                    </span>
                   </div>
                 </Link>
               );
@@ -27,7 +29,7 @@ const Menu = () => {
           </div>
         );
       })}
-      <div>Greko</div>
+      {/* <div>Greko</div> */}
     </div>
   );
 };

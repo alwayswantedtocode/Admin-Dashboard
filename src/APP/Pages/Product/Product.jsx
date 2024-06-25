@@ -1,9 +1,13 @@
-import React from 'react'
+import React from "react";
+import SinglePage from "../../../Components/SinglePage/SinglePage";
+import { singleProduct } from "../../../Components/data";
 
 const Product = () => {
   return (
-    <div>Product</div>
-  )
-}
+    <div>
+      <SinglePage {...singleProduct} />
+    </div>
+  );
+};
 
-export default Product
+export default Product;
